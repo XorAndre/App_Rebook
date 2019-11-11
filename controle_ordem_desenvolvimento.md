@@ -1,6 +1,6 @@
 ## Base CSS
 Definição de componentes de acordo com style guide mostrado
-- Reset (
+- Reset
 - Buttons
 - Cards
 - Sistema de Grids
