@@ -1,4 +1,4 @@
-## Base
+## Base CSS
 Definição de componentes de acordo com style guide mostrado
 - Reset (
 - Buttons
@@ -6,5 +6,10 @@ Definição de componentes de acordo com style guide mostrado
 - Sistema de Grids
 - formulários 
 - menus
+- Mensagens de alertas
+- Tooltips
+- Ícones
+- Type Faces
+
 
 
