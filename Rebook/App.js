@@ -18,7 +18,17 @@ export default class App extends React.Component {
   }
 }
 
+const CustomDrawerComponent = (props) => (
+  <SafeAreaView>
+    <ScrollView>
+      <DrawerItems {...props}/>
+    </ScrollView>
+  </SafeAreaView>
+)
+
 const AppDrawerNavigator = createDrawerNavigator({
   PerfilAluno:PerfilAluno,
   PerfilProfessor:PerfilProfessor
+},{
+  contentComponent: CustomDrawerComponent
 })
