@@ -13,6 +13,9 @@ import { createDrawerNavigator, DrawerItems } from 'react-navigation'
 //Screens
 import PerfilAluno from './src/pages/PerfilAluno'
 import PerfilProfessor from './src/pages/PerfilProfessor'
+import Grade from './src/pages/Grade'
+import Treino from './src/pages/Treino'
+import Resultados from './src/pages/Resultados'
 //Render
 export default class App extends React.Component {
   render() {
@@ -53,7 +56,10 @@ const CustomDrawerComponent = (props) => (
 
 const AppDrawerNavigator = createDrawerNavigator({
   PerfilAluno:PerfilAluno,
-  PerfilProfessor:PerfilProfessor
+  PerfilProfessor:PerfilProfessor,
+  Grade:Grade,
+  Treino:Treino,
+  Resultados:Resultados
 }, {
   contentComponent: CustomDrawerComponent
 })
