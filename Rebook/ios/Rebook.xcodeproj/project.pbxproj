@@ -12,14 +12,14 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		15AB6449D8C73BCFA22D7786 /* libPods-Rebook-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE4E1E5084D655E55EE8813 /* libPods-Rebook-tvOSTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* RebookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RebookTests.m */; };
-		48E666D7A2581134F611A5A8 /* libPods-Rebook-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E72C03C19B06445FD3DFE857 /* libPods-Rebook-tvOSTests.a */; };
-		63FB068CCEEBC3B8261E07B1 /* libPods-Rebook-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7EAFACEE207CAB66386A3F /* libPods-Rebook-tvOS.a */; };
-		81418D662673A08622602F8F /* libPods-RebookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E9059AC5E2BC77D0C6CC0B /* libPods-RebookTests.a */; };
-		F6613F3D23C378AC976F5D38 /* libPods-Rebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BC417C927454B761AF9B1A /* libPods-Rebook.a */; };
+		99108399D54FDCFB0EF7A13B /* libPods-RebookTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 633D43A762F94F5F804308A8 /* libPods-RebookTests.a */; };
+		DC2F97E8B8161AAF60462A04 /* libPods-Rebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1A5F4DED3C513D16BDB597 /* libPods-Rebook.a */; };
+		E5046E2092EDDB55A0399F5F /* libPods-Rebook-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5A6E133DF9505BC0704C37 /* libPods-Rebook-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,8 @@
 		00E356EE1AD99517003FC87E /* RebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RebookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RebookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RebookTests.m; sourceTree = "<group>"; };
+		1252437C14A2359CAB1595AA /* Pods-Rebook-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Rebook-tvOSTests/Pods-Rebook-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		12E58D8CEE72A6757F10A753 /* Pods-Rebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook.release.xcconfig"; path = "Target Support Files/Pods-Rebook/Pods-Rebook.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Rebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Rebook/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Rebook/AppDelegate.m; sourceTree = "<group>"; };
@@ -51,22 +53,20 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Rebook/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Rebook/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Rebook/main.m; sourceTree = "<group>"; };
+		2C6C521A53C3FDCBE93FA4D1 /* Pods-Rebook-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Rebook-tvOSTests/Pods-Rebook-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Rebook-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rebook-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Rebook-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rebook-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E18BBA8C9A2E4DF54404FC0 /* Pods-Rebook-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Rebook-tvOSTests/Pods-Rebook-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		60C999409B830A842C1F41EF /* Pods-Rebook-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Rebook-tvOS/Pods-Rebook-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		8C9DF6A16541E55FE67893C9 /* Pods-Rebook-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Rebook-tvOS/Pods-Rebook-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		9DD07C539FE84060ED5AB3F4 /* Pods-Rebook-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Rebook-tvOSTests/Pods-Rebook-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A67C234C5B5B0D11693EBEA0 /* Pods-RebookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebookTests.release.xcconfig"; path = "Target Support Files/Pods-RebookTests/Pods-RebookTests.release.xcconfig"; sourceTree = "<group>"; };
-		C7E9059AC5E2BC77D0C6CC0B /* libPods-RebookTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebookTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D039D2C8A6E147D348A1F326 /* Pods-Rebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook.release.xcconfig"; path = "Target Support Files/Pods-Rebook/Pods-Rebook.release.xcconfig"; sourceTree = "<group>"; };
-		DF6B5F9BA72B18021AAAA139 /* Pods-Rebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook.debug.xcconfig"; path = "Target Support Files/Pods-Rebook/Pods-Rebook.debug.xcconfig"; sourceTree = "<group>"; };
-		E72C03C19B06445FD3DFE857 /* libPods-Rebook-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rebook-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB7EAFACEE207CAB66386A3F /* libPods-Rebook-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rebook-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5A6E133DF9505BC0704C37 /* libPods-Rebook-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rebook-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE4E1E5084D655E55EE8813 /* libPods-Rebook-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rebook-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E76BC67ACB8A8EA8CCCC38 /* Pods-Rebook-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Rebook-tvOS/Pods-Rebook-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		633D43A762F94F5F804308A8 /* libPods-RebookTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebookTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E797242AF2F7BF124C9F2DE /* Pods-Rebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook.debug.xcconfig"; path = "Target Support Files/Pods-Rebook/Pods-Rebook.debug.xcconfig"; sourceTree = "<group>"; };
+		BF1A5F4DED3C513D16BDB597 /* libPods-Rebook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rebook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C74E03EA48E64FAA3103DA /* Pods-RebookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebookTests.release.xcconfig"; path = "Target Support Files/Pods-RebookTests/Pods-RebookTests.release.xcconfig"; sourceTree = "<group>"; };
+		DFD086457DC7C869997B0EB1 /* Pods-RebookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebookTests.debug.xcconfig"; path = "Target Support Files/Pods-RebookTests/Pods-RebookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F0BC417C927454B761AF9B1A /* libPods-Rebook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rebook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7454F96424123B90C7C865A /* Pods-RebookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebookTests.debug.xcconfig"; path = "Target Support Files/Pods-RebookTests/Pods-RebookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F91556722693CEE71B32107B /* Pods-Rebook-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rebook-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Rebook-tvOS/Pods-Rebook-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81418D662673A08622602F8F /* libPods-RebookTests.a in Frameworks */,
+				99108399D54FDCFB0EF7A13B /* libPods-RebookTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6613F3D23C378AC976F5D38 /* libPods-Rebook.a in Frameworks */,
+				DC2F97E8B8161AAF60462A04 /* libPods-Rebook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FB068CCEEBC3B8261E07B1 /* libPods-Rebook-tvOS.a in Frameworks */,
+				E5046E2092EDDB55A0399F5F /* libPods-Rebook-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E666D7A2581134F611A5A8 /* libPods-Rebook-tvOSTests.a in Frameworks */,
+				15AB6449D8C73BCFA22D7786 /* libPods-Rebook-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,25 +141,25 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				F0BC417C927454B761AF9B1A /* libPods-Rebook.a */,
-				EB7EAFACEE207CAB66386A3F /* libPods-Rebook-tvOS.a */,
-				E72C03C19B06445FD3DFE857 /* libPods-Rebook-tvOSTests.a */,
-				C7E9059AC5E2BC77D0C6CC0B /* libPods-RebookTests.a */,
+				BF1A5F4DED3C513D16BDB597 /* libPods-Rebook.a */,
+				3B5A6E133DF9505BC0704C37 /* libPods-Rebook-tvOS.a */,
+				4BE4E1E5084D655E55EE8813 /* libPods-Rebook-tvOSTests.a */,
+				633D43A762F94F5F804308A8 /* libPods-RebookTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		45329A12E6FB9C511AB88E22 /* Pods */ = {
+		4EFF38DE16ED6758F910A242 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DF6B5F9BA72B18021AAAA139 /* Pods-Rebook.debug.xcconfig */,
-				D039D2C8A6E147D348A1F326 /* Pods-Rebook.release.xcconfig */,
-				8C9DF6A16541E55FE67893C9 /* Pods-Rebook-tvOS.debug.xcconfig */,
-				60C999409B830A842C1F41EF /* Pods-Rebook-tvOS.release.xcconfig */,
-				9DD07C539FE84060ED5AB3F4 /* Pods-Rebook-tvOSTests.debug.xcconfig */,
-				5E18BBA8C9A2E4DF54404FC0 /* Pods-Rebook-tvOSTests.release.xcconfig */,
-				F7454F96424123B90C7C865A /* Pods-RebookTests.debug.xcconfig */,
-				A67C234C5B5B0D11693EBEA0 /* Pods-RebookTests.release.xcconfig */,
+				6E797242AF2F7BF124C9F2DE /* Pods-Rebook.debug.xcconfig */,
+				12E58D8CEE72A6757F10A753 /* Pods-Rebook.release.xcconfig */,
+				51E76BC67ACB8A8EA8CCCC38 /* Pods-Rebook-tvOS.debug.xcconfig */,
+				F91556722693CEE71B32107B /* Pods-Rebook-tvOS.release.xcconfig */,
+				2C6C521A53C3FDCBE93FA4D1 /* Pods-Rebook-tvOSTests.debug.xcconfig */,
+				1252437C14A2359CAB1595AA /* Pods-Rebook-tvOSTests.release.xcconfig */,
+				DFD086457DC7C869997B0EB1 /* Pods-RebookTests.debug.xcconfig */,
+				D4C74E03EA48E64FAA3103DA /* Pods-RebookTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -180,7 +180,7 @@
 				00E356EF1AD99517003FC87E /* RebookTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				45329A12E6FB9C511AB88E22 /* Pods */,
+				4EFF38DE16ED6758F910A242 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RebookTests" */;
 			buildPhases = (
-				A1235F3E03956E36E5FC841A /* [CP] Check Pods Manifest.lock */,
+				C7B51441DEAD3239942600F7 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -224,7 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Rebook" */;
 			buildPhases = (
-				281A8833CFAECE9AB0748C46 /* [CP] Check Pods Manifest.lock */,
+				8646DD3F6123A5C8AD1D3351 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -244,7 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Rebook-tvOS" */;
 			buildPhases = (
-				6F1B9D803FB846818C2898F7 /* [CP] Check Pods Manifest.lock */,
+				27185637BB4F738126CEAD21 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -264,7 +264,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Rebook-tvOSTests" */;
 			buildPhases = (
-				C87CCA4C1056DB64A03B941E /* [CP] Check Pods Manifest.lock */,
+				D6980C691308AE1E741F65EA /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -373,43 +373,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		281A8833CFAECE9AB0748C46 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Rebook-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		6F1B9D803FB846818C2898F7 /* [CP] Check Pods Manifest.lock */ = {
+		27185637BB4F738126CEAD21 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -431,7 +395,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A1235F3E03956E36E5FC841A /* [CP] Check Pods Manifest.lock */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		8646DD3F6123A5C8AD1D3351 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rebook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7B51441DEAD3239942600F7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,7 +453,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C87CCA4C1056DB64A03B941E /* [CP] Check Pods Manifest.lock */ = {
+		D6980C691308AE1E741F65EA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -580,7 +580,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7454F96424123B90C7C865A /* Pods-RebookTests.debug.xcconfig */;
+			baseConfigurationReference = DFD086457DC7C869997B0EB1 /* Pods-RebookTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -603,7 +603,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A67C234C5B5B0D11693EBEA0 /* Pods-RebookTests.release.xcconfig */;
+			baseConfigurationReference = D4C74E03EA48E64FAA3103DA /* Pods-RebookTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -623,7 +623,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF6B5F9BA72B18021AAAA139 /* Pods-Rebook.debug.xcconfig */;
+			baseConfigurationReference = 6E797242AF2F7BF124C9F2DE /* Pods-Rebook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -643,7 +643,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D039D2C8A6E147D348A1F326 /* Pods-Rebook.release.xcconfig */;
+			baseConfigurationReference = 12E58D8CEE72A6757F10A753 /* Pods-Rebook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -662,7 +662,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C9DF6A16541E55FE67893C9 /* Pods-Rebook-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 51E76BC67ACB8A8EA8CCCC38 /* Pods-Rebook-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -690,7 +690,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60C999409B830A842C1F41EF /* Pods-Rebook-tvOS.release.xcconfig */;
+			baseConfigurationReference = F91556722693CEE71B32107B /* Pods-Rebook-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -718,7 +718,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DD07C539FE84060ED5AB3F4 /* Pods-Rebook-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 2C6C521A53C3FDCBE93FA4D1 /* Pods-Rebook-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -745,7 +745,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E18BBA8C9A2E4DF54404FC0 /* Pods-Rebook-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 1252437C14A2359CAB1595AA /* Pods-Rebook-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

@@ -1,52 +1,24 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
-  View,
   Text,
-  StatusBar,
+  View
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-//Imports
-import Login from './pages/Login';
-import Registro from './pages/registro';
-import Perfil from './pages/perfil';
-import PerfilProfessor from './pages/perfilProfessor';
-import Start from './pages/start';
-import VerificaAluno from './pages/verificaAluno';
+import { createDrawerNavigator,DrawerItems } from 'react-navigation'
+//Screens
+import PerfilAluno from './src/pages/PerfilAluno'
+import PerfilProfessor from './src/pages/PerfilProfessor'
 //Render
-const App: () => React$Node = () => {
-  return (
-    <>
-      <PerfilProfessor />
-    </>
-  );
-};
-
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
+export default class App extends React.Component {
+  render() {
+    return (
+      <AppDrawerNavigator />
+    );
   }
-});
+}
 
-export default App;
+const AppDrawerNavigator = createDrawerNavigator({
+  PerfilAluno:PerfilAluno,
+  PerfilProfessor:PerfilProfessor
+})
