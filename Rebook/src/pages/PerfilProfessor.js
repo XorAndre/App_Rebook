@@ -8,9 +8,14 @@ import {
   TextInput,
   Picker,
   Button,
+  createAppContainer,
+  createDrawerNavagitor
 } from 'react-native'
 
-export default class PerfilProfessor extends React.Component {   
+export default class PerfilProfessor extends React.Component {  
+  static navigationOptions = { 
+    drawerLabel: "Perfil Professor"    
+  }    
   render() {
     return (
       <View style={styles.containerRegistro}>
