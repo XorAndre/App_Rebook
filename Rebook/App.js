@@ -37,10 +37,10 @@ const CustomDrawerComponent = (props) => (
       <View style={styles.container}>
         <View style={styles.GridTextBorder}>
           <Text style={styles.textName}>NOME</Text>
-          <Text style={styles.textCodigo}>000001</Text>
+          <Text style={styles.textCodigo}> KG</Text>
         </View>
         <View style={styles.GridText}>
-          <Text style={styles.textName}>NOME</Text>
+          <Text style={styles.textName}> 178CM </Text>
           <Text style={styles.textCodigo}>000001</Text>
         </View>
       </View>
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     width: '50%',
    },
    imagemMenu:{
-    marginBottom: 40,
+    marginBottom: 10,
    },
    textName:{
     color: '#fff',
@@ -87,5 +87,11 @@ const styles = StyleSheet.create({
    textCodigo:{
     color: '#fff',
     fontSize: 19,
+   },
+   GridTextBorder:{
+    borderRightColor: '#fff',
+    borderRightWidth: 1,
+    borderStyle: 'solid', 
+    width: '50%',
    } 
 });
