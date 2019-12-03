@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Textarea } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import {
   Bars,
   BoxUser,
@@ -38,12 +38,11 @@ import {
   Icon, 
   Input,
   Item,
-  Text 
 } from 'native-base';
 
 
 import {StatusBar} from 'react-native';
-import ProfilePhoto from '~/assets/img/user.png';
+import Photo from '~/assets/img/user.png';
 import BarsPhoto from '~/assets/img/bars.png';
 
 export default function Profile({navigation}) {
@@ -73,13 +72,41 @@ export default function Profile({navigation}) {
         </Content>
       </BoxUser>
       <Content>
-        <Grid>
-          <Col>
-            <Form>
-              <Textarea></Textarea>
-            </Form>
-          </Col>
-        </Grid>
+        <List>
+            <ListItem>
+              <Left>
+                <User source={Photo} />
+              </Left>
+              <Body>
+                <Text>LUCCA</Text>
+              </Body>
+              <Right>
+                
+              </Right>
+            </ListItem>
+            <ListItem>
+              <Left>
+                <User source={Photo} />
+              </Left>
+              <Body>
+                <Text>ARTHUR</Text>
+              </Body>
+              <Right>
+                
+              </Right>
+            </ListItem>
+            <ListItem>
+              <Left>
+                <User source={Photo} />
+              </Left>
+              <Body>
+                <Text>ENZO</Text>
+              </Body>
+              <Right>
+                
+              </Right>
+            </ListItem>
+          </List>
       </Content>
     </Container>
   );

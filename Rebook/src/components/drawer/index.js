@@ -45,7 +45,12 @@ const CustomDrawerContentComponent = ({navigation}) => {
   const Profile = async () => {
     navigation.navigate('Profile');
   };
-
+  const Ajuda = async () => {
+    navigation.navigate('Ajuda');
+  };
+  const Integrations = async () => {
+    navigation.navigate('Integrations');
+  };  
   return (
     <Fragment>
       <Container>
@@ -85,10 +90,10 @@ const CustomDrawerContentComponent = ({navigation}) => {
             <Link onPress={Convidar}>
               <LinkName>Convidar</LinkName>
             </Link>
-            <Link>
+            <Link onPress={Ajuda}>
               <LinkName>Ajuda</LinkName>
             </Link>
-            <Link>
+            <Link onPress={Integrations}>
               <LinkName>Integrações</LinkName>
             </Link>
           </ContainerNav>
