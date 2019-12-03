@@ -10,7 +10,11 @@ import Grade from '~/pages/Grade';
 import Treino from '~/pages/Treino';
 import Convidar from '~/pages/Convidar';
 import UpdateProfile from '~/pages/UpdateProfile';
+<<<<<<< HEAD
 import Ajuda from '~/pages/Ajuda';
+=======
+
+>>>>>>> 9bf7ab949cb23fe2eb2bc169e975bbda1687b244
 const AuthStack = createStackNavigator(
   {
     Login,
