@@ -39,14 +39,14 @@ export default function Profile({navigation}) {
       <ContainerBars onPress={openDrawer}>
         <Bars source={BarsPhoto} />
       </ContainerBars>
-      <Buttin onPress={updateUser}>
-        <TextButtin>Editar Perfil</TextButtin>
-      </Buttin>
       <BoxUser>
         <ContainerPhoto>
           <UserProfile onPress={updateUser}>
             <User source={ProfilePhoto} />
           </UserProfile>
+          <Buttin onPress={updateUser}>
+            <TextButtin>Editar Perfil</TextButtin>
+          </Buttin>
         </ContainerPhoto>
       </BoxUser>
       <VerticalMenu>

@@ -1,7 +1,7 @@
 import {create} from 'apisauce';
 
 const api = create({
-  baseURL: 'https://ah-01.herokuapp.com',
+  baseURL: 'https://api.basicgym.com.br/mobile/v1',
 });
 
 api.addResponseTransform(response => {

@@ -12,17 +12,23 @@ import {
   Right,
   Body,
   Text,
+  Left,
 } from 'native-base';
 import {StatusBar} from 'react-native';
 import ImageManha from '~/assets/img/icones/manha.png';
 import ImageTarde from '~/assets/img/icones/tarde.png';
 import ImageNoite from '~/assets/img/icones/noite.png';
 import BarsPhoto from '~/assets/img/bars.png';
+import grid from '~/hooks/grid';
 
 export default function Profile({navigation}) {
   const openDrawer = () => {
     navigation.toggleDrawer();
   };
+
+
+
+  const data = grid();
 
   return (
     <Container>
@@ -51,97 +57,30 @@ export default function Profile({navigation}) {
       </BoxUser>
       <Content>
         <List>
-          <ListItem thumbnail>
-            <Body>
-              <Text>Corrida</Text>
-              <Text note numberOfLines={1}>
-                60' Runing Waldyr
-              </Text>
-            </Body>
-            <Right>
-              <Button rounded danger>
-                <Text>LOTADO</Text>
-              </Button>
-            </Right>
-          </ListItem>
-          <ListItem thumbnail>
-            <Body>
-              <Text>Cycle</Text>
-              <Text note numberOfLines={1}>
-                60' Cycle Chris
-              </Text>
-            </Body>
-            <Right>
-              <Button rounded info>
-                <Text>REALIZADO</Text>
-              </Button>
-            </Right>
-          </ListItem>
-          <ListItem thumbnail>
-            <Body>
-              <Text>Abdominal</Text>
-              <Text note numberOfLines={1}>
-                60' Sala 1 John
-              </Text>
-            </Body>
-            <Right>
-              <Button rounded light>
-                <Text>RESERVADO</Text>
-              </Button>
-            </Right>
-          </ListItem>
-          <ListItem thumbnail>
-            <Body>
-              <Text>Alongamento</Text>
-              <Text note numberOfLines={1}>
-                60' Sala 2 Valdir
-              </Text>
-            </Body>
-            <Right>
-              <Button rounded success>
-                <Text>RESERVAR</Text>
-              </Button>
-            </Right>
-          </ListItem>
-          <ListItem thumbnail>
-            <Body>
-              <Text>Hatha Yoga</Text>
-              <Text note numberOfLines={1}>
-                60' Zen Sandra
-              </Text>
-            </Body>
-            <Right>
-              <Button rounded success>
-                <Text>RESERVAR</Text>
-              </Button>
-            </Right>
-          </ListItem>
-          <ListItem thumbnail>
-            <Body>
-              <Text>Cycle</Text>
-              <Text note numberOfLines={1}>
-                60' cycle Anselmo
-              </Text>
-            </Body>
-            <Right>
-              <Button rounded success>
-                <Text>RESERVAR</Text>
-              </Button>
-            </Right>
-          </ListItem>
-          <ListItem thumbnail>
-            <Body>
-              <Text>Pilate Balls</Text>
-              <Text note numberOfLines={1}>
-                60' Sala 2 Waldyr
-              </Text>
-            </Body>
-            <Right>
-              <Button rounded success>
-                <Text>RESERVAR</Text>
-              </Button>
-            </Right>
-          </ListItem>
+          {data.map((data, index) => (
+            <ListItem thumbnail key={data._id}>
+              <Left>
+                <Text>{data.Horario}</Text>
+              </Left>
+              <Body>
+                <Text>{data.NomeAula}</Text>
+                <Text note numberOfLines={1}>
+                  {`${data.Sala} ${data.NomeAula} ${data.Professor}`}
+                </Text>
+              </Body>
+              <Right>
+                {data.status == 'lotado' ?
+                ( <Button rounded danger>
+                    <Text>LOTADO</Text>
+                  </Button>
+                ) : (
+                  <Button rounded success>
+                    <Text>RESERVAR</Text>
+                  </Button>
+                )}
+              </Right>
+            </ListItem>
+          ))}
         </List>
       </Content>
     </Container>
