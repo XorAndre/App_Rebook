@@ -20,7 +20,7 @@ import {
   Buttin,
   TextButtin,
 } from './styles';
-import {StatusBar, StyleSheet, Text} from 'react-native';
+import {StatusBar} from 'react-native';
 import ProfilePhoto from '~/assets/img/user.png';
 import BarsPhoto from '~/assets/img/bars.png';
 
@@ -42,7 +42,6 @@ export default function Profile({navigation}) {
       <BoxUser>
         <ContainerPhoto>
           <UserProfile onPress={updateUser}>
-            <Text style={styles.clean}>Erik Douglas Tereza</Text>
             <User source={ProfilePhoto} />
           </UserProfile>
           <Buttin onPress={updateUser}>
@@ -73,9 +72,3 @@ export default function Profile({navigation}) {
     </Container>
   );
 }
-const styles = StyleSheet.create({
-  clean:{
-    color: "#fff",
-    fontSize: 20,
-  }
-});
