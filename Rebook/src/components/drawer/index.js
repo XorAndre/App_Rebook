@@ -1,5 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, {useState, useEffect} from 'react';
+import React, {Fragment} from 'react';
 import {
   Container,
   SubContainer,
@@ -26,63 +25,34 @@ import {withNavigation} from 'react-navigation';
 import User from '~/assets/img/user.png';
 
 const CustomDrawerContentComponent = ({navigation}) => {
-  const [profile] = useState({
-    dbid: '182798',
-    name: 'Erik Douglas Tereza',
-    age: '37 anos, 5 meses e 16 dias',
-    birth: '1982-06-17',
-    email: 'erik.tereza@edtereza.com.br',
-    gender: 'M',
-    nickname: 'Erik D.',
-    peso: '67',
-    height: '178',
-    phone: {
-      home: {
-        code: '',
-        number: '',
-      },
-      work: {
-        code: '11',
-        number: '3759-7878',
-      },
-      mobile: {
-        code: '11',
-        number: '94012-6763',
-      },
-    },
-  });
-
   const Logout = async () => {
     await AsyncStorage.clear();
     navigation.navigate('Login');
   };
 
-  const Grade = () => {
+  const Grade = async () => {
     navigation.navigate('Grade');
   };
 
-  const Treino = () => {
+  const Treino = async () => {
     navigation.navigate('Treino');
   };
 
-  const Convidar = () => {
+  const Convidar = async () => {
     navigation.navigate('Convidar');
   };
 
-  const Profile = () => {
+  const Profile = async () => {
     navigation.navigate('Profile');
   };
-
-  const Ajuda = () => {
+  const Ajuda = async () => {
     navigation.navigate('Ajuda');
   };
-
-  const Integracoes = () => {
-    navigation.navigate('Integracoes');
-  };
-
+  const Integrations = async () => {
+    navigation.navigate('Integrations');
+  };  
   return (
-    <React.Fragment>
+    <Fragment>
       <Container>
         <StatusBar hidden={true} />
         <SubContainer>
@@ -90,17 +60,17 @@ const CustomDrawerContentComponent = ({navigation}) => {
             <ContainerImage onPress={Profile}>
               <ImageProfile source={User} />
               <ContainerName>
-                <Name>{profile.name}</Name>
-                <Id>{profile.dbid}</Id>
+                <Name>Erik</Name>
+                <Id>000001</Id>
               </ContainerName>
             </ContainerImage>
             <ContainerInfo>
               <InfoItem>
-              <Kg>{`${profile.peso}Kg`}</Kg>
+                <Kg>67kg</Kg>
               </InfoItem>
               <Border />
               <InfoItem>
-                <Alt>{`${profile.height}Kg`}</Alt>
+                <Alt>178cm</Alt>
               </InfoItem>
             </ContainerInfo>
           </ContainerUser>
@@ -123,7 +93,7 @@ const CustomDrawerContentComponent = ({navigation}) => {
             <Link onPress={Ajuda}>
               <LinkName>Ajuda</LinkName>
             </Link>
-            <Link onPress={Integracoes}>
+            <Link onPress={Integrations}>
               <LinkName>Integrações</LinkName>
             </Link>
           </ContainerNav>
@@ -132,7 +102,7 @@ const CustomDrawerContentComponent = ({navigation}) => {
       <ContainerLogout onPress={Logout}>
         <LogoutName>Logout</LogoutName>
       </ContainerLogout>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

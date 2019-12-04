@@ -1,7 +1,47 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
-import {Container, Bars, BoxUser, ContainerBars} from './styles';
-import {Col, Grid, Content, Form, Input, Text} from 'native-base';
+import { StyleSheet, View } from 'react-native';
+import {
+  Bars,
+  BoxUser,
+  ContainerPhoto,
+  UserProfile,
+  User,
+  VerticalMenu,
+  ItemVertical,
+  TextVertical,
+  VerticalRed,
+  VerticalGreen,
+  VerticalGrey,
+  ContainerCircle,
+  Circle,
+  TextCircle,
+  TextDown,
+  ContainerBars,
+} from './styles';
+
+import { 
+  Button,
+  Container,
+  Col,
+  Header,
+  Grid,
+  Title, 
+  Content, 
+  Form,
+  Footer, 
+  FooterTab, 
+  Left, 
+  List, 
+  ListItem,
+  Right, 
+  Body, 
+  Icon, 
+  Input,
+  Item,
+  Text,
+} from 'native-base';
+
+
 import {StatusBar} from 'react-native';
 import ProfilePhoto from '~/assets/img/user.png';
 import BarsPhoto from '~/assets/img/bars.png';
@@ -9,6 +49,10 @@ import BarsPhoto from '~/assets/img/bars.png';
 export default function Profile({navigation}) {
   const openDrawer = () => {
     navigation.toggleDrawer();
+  };
+
+  const updateUser = () => {
+    console.log('atualizar');
   };
 
   return (
@@ -29,9 +73,12 @@ export default function Profile({navigation}) {
       <Content>
         <Grid>
           <Col>
-            <Form>
-              <Text>Ajuda</Text>
+            <Form style={styles.Form}>
+              <Text style={styles.text}>Precisa de alguma ajuda?</Text>
               <Input style={styles.textArea} />
+              <Button style={styles.button} rounded success>
+                <Text>ENVIAR</Text>
+              </Button>
             </Form>
           </Col>
         </Grid>
@@ -42,20 +89,40 @@ export default function Profile({navigation}) {
 
 const styles = StyleSheet.create({
   col:{
-    alignItems: 'center',
+    alignItems: 'center', 
   },
   clean:{
     color: '#fff',
+    fontSize: 23,
   },
   grid:{
-    alignItems: 'center',
+    alignItems: 'center', 
     marginTop: 20,
   },
- icon:{
-  height: 30,
-  width: 30,
- },
- textArea:{
-  height: 120,
- }
+  icon:{
+    height: 30,
+    width: 30,
+  },
+  Form:{
+    alignItems: 'center',
+    margin: '1.5%',
+    width: '97%',
+  },
+  text:{
+    fontSize: 22,
+    padding: 8,
+    textTransform: 'uppercase',
+  },
+  textArea:{
+    backgroundColor: '#EDEDED',
+    borderColor: '#95989A',
+    borderRadius: 5,
+    borderStyle: 'solid',
+    borderWidth: 2,
+    height: 200,
+    width: '100%',
+  },
+  button:{
+    marginTop: 20,
+  }
 });

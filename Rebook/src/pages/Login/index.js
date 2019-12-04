@@ -23,7 +23,7 @@ import Reebok from '~/assets/img/logo.png';
 import AsyncStorage from '@react-native-community/async-storage';
 
 function login({navigation}) {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
 
   const [password, setPassword] = useState('');
 
@@ -37,24 +37,12 @@ function login({navigation}) {
 
   const auth = async () => {
     try {
-      const response = await api.post(
-        '/login',
-        {
-          username,
-          password,
-        },
-        {
-          headers: {
-            'X-Bearer':
-              'DWtBx2O4Y4X4AoI3wyhNt01gy2dBDi6rUGGzcFBi2cDoLrsJIeNKIjjPgEeRcKCq5PKgN2qXGNPfAjjIBMrl5LaXezCMW0mF5GzI4OCLM9lNYAPrp7T9Pjw8al9muwoF',
-          },
-        },
-      );
-      const {token, session} = response.data;
+      const response = await api.post('/login', {email, password});
+      const {token, user} = response.data;
 
       await AsyncStorage.multiSet([
         ['@reebok:token', token],
-        ['@reebok:user', JSON.parse(session)],
+        ['@reebok:user', JSON.stringify(user)],
       ]);
 
       navigation.navigate('Profile');
@@ -81,8 +69,8 @@ function login({navigation}) {
           autoCorrect={false}
           placeholder="Digite seu email"
           placeholderTextColor="#fff"
-          value={username}
-          onChangeText={setUsername}
+          value={email}
+          onChangeText={setEmail}
         />
         <InputPassword
           placeholder="Digite sua senha"

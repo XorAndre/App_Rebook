@@ -11,7 +11,7 @@ export const ContainerBars = styled.TouchableOpacity`
   position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 400;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
