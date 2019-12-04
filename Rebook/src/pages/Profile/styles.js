@@ -32,15 +32,16 @@ export const BoxUser = styled.View`
 export const ContainerPhoto = styled.View`
   flex: 1;
   align-items: center;
-  justify-content: center;
 `;
 
 export const UserProfile = styled.TouchableOpacity`
-  width: 80px;
+  align-items: center;
+  padding: 10px;
+  width: 48%;
   height: 80px;
 `;
-
 export const User = styled.Image`
+  margin-top: 10px;
   width: 80px;
   height: 80px;
 `;
