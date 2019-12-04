@@ -72,6 +72,7 @@ const CustomDrawerContentComponent = ({navigation}) => {
   const Profile = () => {
     navigation.navigate('Profile');
   };
+<<<<<<< HEAD
 
   const Ajuda = () => {
     navigation.navigate('Ajuda');
@@ -81,6 +82,14 @@ const CustomDrawerContentComponent = ({navigation}) => {
     navigation.navigate('Integracoes');
   };
 
+=======
+  const Ajuda = async () => {
+    navigation.navigate('Ajuda');
+  };
+  const Integrations = async () => {
+    navigation.navigate('Integrations');
+  };  
+>>>>>>> 746ce7473ed10f45183e14297ff4246ba2080dc8
   return (
     <React.Fragment>
       <Container>
@@ -123,7 +132,11 @@ const CustomDrawerContentComponent = ({navigation}) => {
             <Link onPress={Ajuda}>
               <LinkName>Ajuda</LinkName>
             </Link>
+<<<<<<< HEAD
             <Link onPress={Integracoes}>
+=======
+            <Link onPress={Integrations}>
+>>>>>>> 746ce7473ed10f45183e14297ff4246ba2080dc8
               <LinkName>Integrações</LinkName>
             </Link>
           </ContainerNav>
