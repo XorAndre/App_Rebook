@@ -1,57 +1,26 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import {StyleSheet} from 'react-native';
+import {Bars, BoxUser, User, ContainerBars} from './styles';
 import {
-  Bars,
-  BoxUser,
-  ContainerPhoto,
-  UserProfile,
-  User,
-  VerticalMenu,
-  ItemVertical,
-  TextVertical,
-  VerticalRed,
-  VerticalGreen,
-  VerticalGrey,
-  ContainerCircle,
-  Circle,
-  TextCircle,
-  TextDown,
-  ContainerBars,
-} from './styles';
-
-import { 
-  Button,
   Container,
   Col,
-  Header,
   Grid,
-  Title, 
-  Content, 
-  Form,
-  Footer, 
-  FooterTab, 
-  Left, 
-  List, 
+  Content,
+  Left,
+  List,
   ListItem,
-  Right, 
-  Body, 
-  Icon, 
-  Input,
-  Item,
+  Right,
+  Body,
+  Text,
 } from 'native-base';
 
-
 import {StatusBar} from 'react-native';
-import Photo from '~/assets/img/user.png';
+import ProfilePhoto from '~/assets/img/user.png';
 import BarsPhoto from '~/assets/img/bars.png';
 
 export default function Profile({navigation}) {
   const openDrawer = () => {
     navigation.toggleDrawer();
-  };
-
-  const updateUser = () => {
-    console.log('atualizar');
   };
 
   return (
@@ -72,59 +41,56 @@ export default function Profile({navigation}) {
         </Content>
       </BoxUser>
       <Content>
+        <Grid>
+          <Col />
+        </Grid>
         <List>
-            <ListItem>
-              <Left>
-                <User source={Photo} />
-              </Left>
-              <Body>
-                <Text>LUCCA</Text>
-              </Body>
-              <Right>
-                
-              </Right>
-            </ListItem>
-            <ListItem>
-              <Left>
-                <User source={Photo} />
-              </Left>
-              <Body>
-                <Text>ARTHUR</Text>
-              </Body>
-              <Right>
-                
-              </Right>
-            </ListItem>
-            <ListItem>
-              <Left>
-                <User source={Photo} />
-              </Left>
-              <Body>
-                <Text>ENZO</Text>
-              </Body>
-              <Right>
-                
-              </Right>
-            </ListItem>
-          </List>
+          <ListItem>
+            <Left>
+              <User source={ProfilePhoto} />
+            </Left>
+            <Body>
+              <Text>LUCCA</Text>
+            </Body>
+            <Right />
+          </ListItem>
+          <ListItem>
+            <Left>
+              <User source={ProfilePhoto} />
+            </Left>
+            <Body>
+              <Text>ARTHUR</Text>
+            </Body>
+            <Right />
+          </ListItem>
+          <ListItem>
+            <Left>
+              <User source={ProfilePhoto} />
+            </Left>
+            <Body>
+              <Text>ENZO</Text>
+            </Body>
+            <Right />
+          </ListItem>
+        </List>
       </Content>
     </Container>
   );
 }
 
 const styles = StyleSheet.create({
-  col:{
-    alignItems: 'center', 
+  col: {
+    alignItems: 'center',
   },
-  clean:{
+  clean: {
     color: '#fff',
   },
-  grid:{
-    alignItems: 'center', 
+  grid: {
+    alignItems: 'center',
     marginTop: 20,
   },
- icon:{
-  height: 30,
-  width: 30,
- }
+  icon: {
+    height: 30,
+    width: 30,
+  },
 });

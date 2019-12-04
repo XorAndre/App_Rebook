@@ -1,4 +1,5 @@
-import React, {Fragment} from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, {useState, useEffect} from 'react';
 import {
   Container,
   SubContainer,
@@ -23,36 +24,42 @@ import {StatusBar} from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import {withNavigation} from 'react-navigation';
 import User from '~/assets/img/user.png';
+import UserProfile from '~/hooks/profile';
 
 const CustomDrawerContentComponent = ({navigation}) => {
+  const profile = UserProfile();
+
   const Logout = async () => {
     await AsyncStorage.clear();
     navigation.navigate('Login');
   };
 
-  const Grade = async () => {
+  const Grade = () => {
     navigation.navigate('Grade');
   };
 
-  const Treino = async () => {
+  const Treino = () => {
     navigation.navigate('Treino');
   };
 
-  const Convidar = async () => {
+  const Convidar = () => {
     navigation.navigate('Convidar');
   };
 
-  const Profile = async () => {
+  const Profile = () => {
     navigation.navigate('Profile');
   };
-  const Ajuda = async () => {
+
+  const Ajuda = () => {
     navigation.navigate('Ajuda');
   };
-  const Integrations = async () => {
-    navigation.navigate('Integrations');
-  };  
+
+  const Integracoes = () => {
+    navigation.navigate('Integracoes');
+  };
+
   return (
-    <Fragment>
+    <React.Fragment>
       <Container>
         <StatusBar hidden={true} />
         <SubContainer>
@@ -60,17 +67,17 @@ const CustomDrawerContentComponent = ({navigation}) => {
             <ContainerImage onPress={Profile}>
               <ImageProfile source={User} />
               <ContainerName>
-                <Name>Erik</Name>
-                <Id>000001</Id>
+                <Name>{profile.name}</Name>
+                <Id>{profile.dbid}</Id>
               </ContainerName>
             </ContainerImage>
             <ContainerInfo>
               <InfoItem>
-                <Kg>67kg</Kg>
+                <Kg>{`${profile.peso}Kg`}</Kg>
               </InfoItem>
               <Border />
               <InfoItem>
-                <Alt>178cm</Alt>
+                <Alt>{`${profile.height}Cm`}</Alt>
               </InfoItem>
             </ContainerInfo>
           </ContainerUser>
@@ -85,7 +92,7 @@ const CustomDrawerContentComponent = ({navigation}) => {
               <LinkName>Resultados</LinkName>
             </Link>
             <Link>
-              <LinkName>Escolha seu</LinkName>
+              <LinkName>Escolha seu personal</LinkName>
             </Link>
             <Link onPress={Convidar}>
               <LinkName>Convidar</LinkName>
@@ -93,7 +100,7 @@ const CustomDrawerContentComponent = ({navigation}) => {
             <Link onPress={Ajuda}>
               <LinkName>Ajuda</LinkName>
             </Link>
-            <Link onPress={Integrations}>
+            <Link onPress={Integracoes}>
               <LinkName>Integrações</LinkName>
             </Link>
           </ContainerNav>
@@ -102,7 +109,7 @@ const CustomDrawerContentComponent = ({navigation}) => {
       <ContainerLogout onPress={Logout}>
         <LogoutName>Logout</LogoutName>
       </ContainerLogout>
-    </Fragment>
+    </React.Fragment>
   );
 };
 

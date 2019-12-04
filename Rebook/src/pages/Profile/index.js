@@ -19,12 +19,20 @@ import {
   ContainerBars,
   Buttin,
   TextButtin,
+  TopText,
+  NameText,
+  IdText,
+  Kg,
+  Cm,
 } from './styles';
 import {StatusBar} from 'react-native';
 import ProfilePhoto from '~/assets/img/user.png';
 import BarsPhoto from '~/assets/img/bars.png';
+import usuario from '~/hooks/profile';
 
 export default function Profile({navigation}) {
+  const data = usuario();
+
   const openDrawer = () => {
     navigation.toggleDrawer();
   };
@@ -41,6 +49,12 @@ export default function Profile({navigation}) {
       </ContainerBars>
       <BoxUser>
         <ContainerPhoto>
+          <TopText>
+            <NameText>{data.name}</NameText>
+            <IdText>{data.dbid}</IdText>
+          </TopText>
+          <Kg>{`${data.peso}Kg`}</Kg>
+          <Cm>{`${data.height}Cm`}</Cm>
           <UserProfile onPress={updateUser}>
             <User source={ProfilePhoto} />
           </UserProfile>

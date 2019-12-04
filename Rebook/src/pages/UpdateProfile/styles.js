@@ -41,6 +41,5 @@ export const Bars = styled.Image`
 export const ProfilePhoto = styled.Image`
   width: 130px;
   height: 130px;
-  margin-left: 30%;
   margin-top: 70px;
 `;

@@ -11,7 +11,7 @@ export const ContainerBars = styled.TouchableOpacity`
   position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 100;
+  z-index: 400;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,8 @@ export const Bars = styled.Image`
 
 export const BoxUser = styled.View`
   width: 100%;
-  height: 170;
+  height: 220;
+  position: relative;
   background-color: #c23335;
 `;
 
@@ -38,6 +39,8 @@ export const ContainerPhoto = styled.View`
 export const UserProfile = styled.TouchableOpacity`
   width: 80px;
   height: 80px;
+  position: relative;
+  top: 20px;
 `;
 
 export const User = styled.Image`
@@ -122,7 +125,7 @@ export const Buttin = styled.TouchableOpacity`
   background-color: white;
   position: absolute;
   z-index: 200;
-  top: 135px;
+  bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,4 +134,39 @@ export const Buttin = styled.TouchableOpacity`
 export const TextButtin = styled.Text`
   color: #c23335;
   font-size: 12;
+`;
+
+export const TopText = styled.View`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+`;
+
+export const NameText = styled.Text`
+  color: white;
+  margin-bottom: 5px;
+  font-size: 20;
+`;
+
+export const IdText = styled.Text`
+  color: white;
+  font-size: 20;
+`;
+
+export const Kg = styled.Text`
+  color: white;
+  font-size: 20;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+`;
+
+export const Cm = styled.Text`
+  color: white;
+  font-size: 20;
+  position: absolute;
+  right: 50px;
+  top: 100px;
 `;
