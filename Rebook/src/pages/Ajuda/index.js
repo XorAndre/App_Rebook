@@ -52,18 +52,17 @@ export default function Profile({navigation}) {
   return (
     <Container>
       <StatusBar hidden={true} />
-      <ContainerBars onPress={openDrawer}>
-        <Bars source={BarsPhoto} />
-      </ContainerBars>
-      <BoxUser>
-        <Content>
-          <Grid style={styles.grid}>
-            <Col style={styles.col}>
-              <Text style={styles.clean}>AJUDA</Text>
-            </Col>
-          </Grid>
-        </Content>
-      </BoxUser>
+      <Header style={styles.Topo}>
+          <Left>
+            <Button transparent onPress={openDrawer}>
+              <Icon style={styles.clean} name='menu' />
+            </Button>
+          </Left>
+          <Body>
+            <Title style={styles.clean}>AJUDA</Title>
+          </Body>
+          <Right />
+        </Header>
       <Content>
         <Grid>
           <Col>
@@ -82,12 +81,14 @@ export default function Profile({navigation}) {
 }
 
 const styles = StyleSheet.create({
+  Topo:{
+    backgroundColor: '#C23335',
+  },
   col:{
     alignItems: 'center',
   },
   clean:{
     color: '#fff',
-    fontSize: 23,
   },
   grid:{
     alignItems: 'center',
