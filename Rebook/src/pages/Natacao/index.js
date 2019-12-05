@@ -139,6 +139,11 @@ const openDrawer = () => {
                     <CheckBox checked={false} />
                     <CheckBox checked={true} style={styles.okCheck} />
                 </Col>
+                <Col style={styles.gridButton}>
+                    <Button rounded success>
+                        <Text>RESERVAR</Text>
+                    </Button>
+                </Col>
             </Grid>
         </Content>
     </Container>
@@ -198,5 +203,10 @@ const styles = StyleSheet.create({
     },
     okCheck:{
         marginLeft: 10,
+    },
+    gridButton:{
+        marginTop: 30,
+        marginRight: 18,
+        width: '28%',
     }
   });
