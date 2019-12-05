@@ -17,7 +17,7 @@ import AvaliarTreino from '~/pages/Avaliarmeutreino';
 import Natacao from '~/pages/Natacao';
 import ProfileWeek from '~/pages/ProfileWeek';
 import ProfileMount from '~/pages/ProfileMount';
-
+import Resultados from '~/pages/Resultados';
 const AuthStack = createStackNavigator(
   {
     Login,
@@ -41,6 +41,7 @@ const AppStack = createStackNavigator(
     Circulo,
     AvaliarTreino,
     Natacao,
+    Resultados,
   },
   {
     initialRouteName: 'Profile',

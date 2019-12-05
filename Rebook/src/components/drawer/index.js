@@ -57,6 +57,9 @@ const CustomDrawerContentComponent = ({navigation}) => {
   const Integrations = async () => {
     navigation.navigate('Integrations');
   };  
+  const Resultados = async () => {
+    navigation.navigate('Resultados');
+  };
 
   return (
     <React.Fragment>
@@ -89,7 +92,7 @@ const CustomDrawerContentComponent = ({navigation}) => {
               <LinkName>Treino</LinkName>
             </Link>
             <Link>
-              <LinkName>Resultados</LinkName>
+              <LinkName onPress={Resultados}>Resultados</LinkName>
             </Link>
             <Link>
               <LinkName>Escolha seu personal</LinkName>
