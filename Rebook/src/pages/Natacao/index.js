@@ -57,10 +57,33 @@ const openDrawer = () => {
             </Button>
           </Left>
           <Body>
-            <Title style={styles.cleanText}>NATAÇAO</Title>
+            <Title style={styles.cleanText}>NATAÇÃO</Title>
           </Body>
           <Right />
         </Header>
+        <View style={styles.ContainerTABS}>
+            <Button transparent style={styles.AtiveTABS}>
+                <Text style={styles.AtivaColor}>SEG</Text>    
+            </Button>
+            <Button transparent>
+                <Text style={styles.ColorTABS}>TER</Text>    
+            </Button>
+            <Button transparent>
+                <Text style={styles.ColorTABS}>QUA</Text>    
+            </Button>
+            <Button transparent>
+                <Text style={styles.ColorTABS}>QUI</Text>    
+            </Button>
+            <Button transparent>
+                <Text style={styles.ColorTABS}>SEX</Text>    
+            </Button>
+            <Button transparent>
+                <Text style={styles.ColorTABS}>SÁB</Text>    
+            </Button>
+            <Button transparent>
+                <Text style={styles.ColorTABS}>DOM</Text>    
+            </Button>
+        </View>
         <Content>
             <Grid style={styles.content}>
                 <Col style={styles.colfix}>
@@ -69,6 +92,7 @@ const openDrawer = () => {
                 <Col style={styles.colProfessor}>
                     <Image source={Professor}></Image>    
                     <Text>NOME PROFE</Text>
+                    <Text>PISCINA</Text>
                 </Col>
                 <Col style={styles.colfix}>
                     <Text style={styles.positionText}>Hora</Text>
@@ -208,5 +232,22 @@ const styles = StyleSheet.create({
         marginTop: 30,
         marginRight: 18,
         width: '28%',
+    },
+    ContainerTABS:{
+        backgroundColor: '#C23335',
+        flexDirection: 'row',
+    },
+    ColorTABS:{
+        color: '#fff',
+    },
+    AtiveTABS:{
+        backgroundColor: '#fff',
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10,
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0,
+    },
+    AtivaColor:{
+        color: '#C23335',
     }
   });
