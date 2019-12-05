@@ -116,6 +116,9 @@ export default function Profile({navigation}) {
             </Button>
           </Col>
         </Grid>
+        <Grid>
+          
+        </Grid>
       </Content>
     </Container>
   );

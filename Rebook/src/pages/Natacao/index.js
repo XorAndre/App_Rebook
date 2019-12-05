@@ -134,6 +134,12 @@ const openDrawer = () => {
                     </View> 
                 </Col>
             </Grid>
+            <Grid>
+                <Col style={styles.gridCheck}>
+                    <CheckBox checked={false} />
+                    <CheckBox checked={true} style={styles.okCheck} />
+                </Col>
+            </Grid>
         </Content>
     </Container>
   );
@@ -185,5 +191,12 @@ const styles = StyleSheet.create({
     },
     dados:{
         alignItems: 'center',
+    },
+    gridCheck:{
+        flexDirection: 'row',
+        padding: 10,
+    },
+    okCheck:{
+        marginLeft: 10,
     }
   });
