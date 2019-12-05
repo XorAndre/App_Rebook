@@ -30,6 +30,9 @@ export default function Profile({navigation}) {
   const AvaliarTreino = () => {
     navigation.navigate('AvaliarTreino');
   };
+  const Circulo = () => {
+    navigation.navigate('Circulo');
+  };
   return (
     <Container>
       <StatusBar hidden={true} />
@@ -111,7 +114,7 @@ export default function Profile({navigation}) {
           </Col>
           <Col style={styles.columnMeio}><Text>450CKAL</Text></Col>
           <Col>
-            <Button small rounded success>
+            <Button small rounded success onPress={Circulo}>
               <Text>RESERVAR</Text>
             </Button>
           </Col>
