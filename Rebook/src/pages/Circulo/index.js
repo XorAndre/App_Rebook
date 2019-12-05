@@ -27,13 +27,13 @@ import {
   Input,
   Item,
 } from 'native-base';
+import BarsPhoto from '~/assets/img/back.png';
+import User from '~/assets/img/user.png';
 
-
-export default function UpdateProfile({navigation}) {
+export default function Circulo({navigation}) {
   const Back = () => {
     navigation.navigate('Profile');
   };
-
   return (
     <Container>
       <StatusBar hidden={true} barStyle="light-content" />
@@ -48,32 +48,6 @@ export default function UpdateProfile({navigation}) {
             <ProfilePhoto source={User} />
           </Col>
         </Grid>
-        <List>
-          <ListItem>
-            <Left>
-              <Text>Seu nome: </Text>
-            </Left>
-            <Right>
-              <Text>Aterar</Text>
-            </Right>
-          </ListItem>
-          <ListItem>
-            <Left>
-              <Text>Seu peso: </Text>
-            </Left>
-            <Right>
-              <Text>Aterar</Text>
-            </Right>
-          </ListItem>
-          <ListItem>
-            <Left>
-              <Text>Sua altura: </Text>
-            </Left>
-            <Right>
-              <Text>Aterar</Text>
-            </Right>
-          </ListItem>
-        </List>
       </Content>
     </Container>
   );

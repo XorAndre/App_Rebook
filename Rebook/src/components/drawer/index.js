@@ -53,10 +53,10 @@ const CustomDrawerContentComponent = ({navigation}) => {
   const Ajuda = () => {
     navigation.navigate('Ajuda');
   };
-
-  const Integracoes = () => {
-    navigation.navigate('Integracoes');
-  };
+  
+  const Integrations = async () => {
+    navigation.navigate('Integrations');
+  };  
 
   return (
     <React.Fragment>
@@ -100,7 +100,7 @@ const CustomDrawerContentComponent = ({navigation}) => {
             <Link onPress={Ajuda}>
               <LinkName>Ajuda</LinkName>
             </Link>
-            <Link onPress={Integracoes}>
+            <Link onPress={Integrations}>
               <LinkName>Integrações</LinkName>
             </Link>
           </ContainerNav>

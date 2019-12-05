@@ -10,6 +10,11 @@ import Grade from '~/pages/Grade';
 import Treino from '~/pages/Treino';
 import Convidar from '~/pages/Convidar';
 import UpdateProfile from '~/pages/UpdateProfile';
+import Circulo from '~/pages/Circulo';
+import Ajuda from '~/pages/Ajuda';
+import Integrations from '~/pages/Integracoes';
+import AvaliarTreino from '~/pages/Avaliarmeutreino';
+import Natacao from '~/pages/Natacao';
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 
 const AuthStack = createStackNavigator(
@@ -29,7 +34,12 @@ const AppStack = createStackNavigator(
     Treino,
     Convidar,
     UpdateProfile,
+    Ajuda,
+    Integrations,
     Grade,
+    Circulo,
+    AvaliarTreino,
+    Natacao,
   },
   {
     initialRouteName: 'Profile',
