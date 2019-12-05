@@ -21,7 +21,7 @@ import grid from '~/hooks/grid';
 import Modal from './modal';
 
 export default function Profile({navigation}) {
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const [error, setError] = useState('false');
 
   const openModal = () => {

@@ -30,7 +30,7 @@ import ProfilePhoto from '~/assets/img/user.png';
 import BarsPhoto from '~/assets/img/bars.png';
 import usuario from '~/hooks/profile';
 
-export default function Profile({navigation}) {
+export default function ProfileWeek({navigation}) {
   const data = usuario();
 
   const openDrawer = () => {
@@ -41,8 +41,8 @@ export default function Profile({navigation}) {
     navigation.navigate('UpdateProfile');
   };
 
-  const navigateWeek = () => {
-    navigation.navigate('ProfileWeek');
+  const navigateDay = () => {
+    navigation.navigate('Profile');
   };
 
   const navigateMount = () => {
@@ -74,11 +74,11 @@ export default function Profile({navigation}) {
       <VerticalMenu>
         <ItemVertical>
           <TextVertical>Dia</TextVertical>
-          <VerticalRed />
+          <VerticalRed onPress={navigateDay} />
         </ItemVertical>
         <ItemVertical>
           <TextVertical>Semana</TextVertical>
-          <VerticalGreen onPress={navigateWeek} />
+          <VerticalGreen />
         </ItemVertical>
         <ItemVertical>
           <TextVertical>Mês</TextVertical>
@@ -87,7 +87,7 @@ export default function Profile({navigation}) {
       </VerticalMenu>
       <ContainerCircle>
         <Circle>
-          <TextCircle>500</TextCircle>
+          <TextCircle>1580</TextCircle>
           <TextDown>kcal</TextDown>
         </Circle>
       </ContainerCircle>

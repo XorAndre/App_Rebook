@@ -30,23 +30,23 @@ import ProfilePhoto from '~/assets/img/user.png';
 import BarsPhoto from '~/assets/img/bars.png';
 import usuario from '~/hooks/profile';
 
-export default function Profile({navigation}) {
+export default function ProfileMount({navigation}) {
   const data = usuario();
 
   const openDrawer = () => {
-    navigation.toggleDrawer();
+    navigation.openDrawer();
   };
 
   const updateUser = () => {
     navigation.navigate('UpdateProfile');
   };
 
-  const navigateWeek = () => {
-    navigation.navigate('ProfileWeek');
+  const navigateDay = () => {
+    navigation.navigate('Profile');
   };
 
-  const navigateMount = () => {
-    navigation.navigate('ProfileMount');
+  const navigateWeek = () => {
+    navigation.navigate('ProfileWeek');
   };
 
   return (
@@ -74,7 +74,7 @@ export default function Profile({navigation}) {
       <VerticalMenu>
         <ItemVertical>
           <TextVertical>Dia</TextVertical>
-          <VerticalRed />
+          <VerticalRed onPress={navigateDay} />
         </ItemVertical>
         <ItemVertical>
           <TextVertical>Semana</TextVertical>
@@ -82,12 +82,12 @@ export default function Profile({navigation}) {
         </ItemVertical>
         <ItemVertical>
           <TextVertical>Mês</TextVertical>
-          <VerticalGrey onPress={navigateMount} />
+          <VerticalGrey />
         </ItemVertical>
       </VerticalMenu>
       <ContainerCircle>
         <Circle>
-          <TextCircle>500</TextCircle>
+          <TextCircle>27.715</TextCircle>
           <TextDown>kcal</TextDown>
         </Circle>
       </ContainerCircle>

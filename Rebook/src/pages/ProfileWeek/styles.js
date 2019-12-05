@@ -71,9 +71,7 @@ export const TextVertical = styled.Text`
 export const VerticalRed = styled.TouchableOpacity`
   width: 24px;
   height: 24px;
-  background-color: #C10037;
-  border-width: 5px;
-  border-color: #f24979 ;
+  background-color: #f24979;
   margin-top: 10px;
   border-radius: 9999px;
 `;
@@ -81,7 +79,9 @@ export const VerticalRed = styled.TouchableOpacity`
 export const VerticalGreen = styled.TouchableOpacity`
   width: 24px;
   height: 24px;
-  background-color: #b8d54b;
+  border-width: 5px;
+  border-color: #b8d54b;
+  background-color: #81A300;
   margin-top: 10px;
   border-radius: 9999px;
 `;
@@ -104,7 +104,7 @@ export const Circle = styled.View`
   height: 150px;
   border-radius: 9999px;
   border-width: 3px;
-  border-color: #f24979;
+  border-color: #b8d54b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,12 +112,12 @@ export const Circle = styled.View`
 `;
 
 export const TextCircle = styled.Text`
-  color: #f24979;
+  color: #b8d54b;
   font-size: 25;
 `;
 
 export const TextDown = styled.Text`
-  color: #f24979;
+  color: #b8d54b;
   font-size: 25;
 `;
 

@@ -1,33 +1,27 @@
 import React from 'react';
-import {StatusBar, Text} from 'react-native';
+import {StatusBar, Text, StyleSheet} from 'react-native';
 import {
   ContainerHeader,
-  TextHeader,
   Bars,
   ProfilePhoto,
   ContainerBars,
+  ContainerTitle,
+  TitleUpdate,
+  ButtonSave,
+  ContainerButton,
 } from './styles';
-import { 
-  Button,
+import {
   Container,
   Col,
-  Header,
   Grid,
-  Title, 
-  Content, 
-  Form,
-  Footer, 
-  FooterTab, 
-  Left, 
-  List, 
+  Content,
+  Left,
+  List,
   ListItem,
-  Right, 
-  Body, 
-  Icon, 
-  Input,
-  Item,
+  Right,
 } from 'native-base';
-
+import BarsPhoto from '~/assets/img/back.png';
+import User from '~/assets/img/user.png';
 
 export default function UpdateProfile({navigation}) {
   const Back = () => {
@@ -41,10 +35,13 @@ export default function UpdateProfile({navigation}) {
         <ContainerBars onPress={Back}>
           <Bars source={BarsPhoto} />
         </ContainerBars>
+        <ContainerTitle>
+          <TitleUpdate>Editar Perfil</TitleUpdate>
+        </ContainerTitle>
       </ContainerHeader>
       <Content>
         <Grid>
-          <Col>
+          <Col style={styles.flex}>
             <ProfilePhoto source={User} />
           </Col>
         </Grid>
@@ -74,7 +71,23 @@ export default function UpdateProfile({navigation}) {
             </Right>
           </ListItem>
         </List>
+        <ContainerButton>
+          <ButtonSave>
+            <Text style={styles.clear}>Salvar</Text>
+          </ButtonSave>
+        </ContainerButton>
       </Content>
     </Container>
   );
 }
+
+const styles = StyleSheet.create({
+  flex: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  clear: {
+    color: 'white',
+  },
+});
