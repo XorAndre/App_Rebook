@@ -41,6 +41,14 @@ export default function Profile({navigation}) {
     navigation.navigate('UpdateProfile');
   };
 
+  const navigateWeek = () => {
+    navigation.navigate('ProfileWeek');
+  };
+
+  const navigateMount = () => {
+    navigation.navigate('ProfileMount');
+  };
+
   return (
     <Container>
       <StatusBar hidden={true} />
@@ -70,11 +78,11 @@ export default function Profile({navigation}) {
         </ItemVertical>
         <ItemVertical>
           <TextVertical>Semana</TextVertical>
-          <VerticalGreen />
+          <VerticalGreen onPress={navigateWeek} />
         </ItemVertical>
         <ItemVertical>
           <TextVertical>Mês</TextVertical>
-          <VerticalGrey />
+          <VerticalGrey onPress={navigateMount} />
         </ItemVertical>
       </VerticalMenu>
       <ContainerCircle>

@@ -68,15 +68,17 @@ export const TextVertical = styled.Text`
   font-size: 20;
 `;
 
-export const VerticalRed = styled.View`
+export const VerticalRed = styled.TouchableOpacity`
   width: 24px;
   height: 24px;
-  background-color: #f24979;
+  background-color: #c10037;
+  border-width: 5px;
+  border-color: #f24979;
   margin-top: 10px;
   border-radius: 9999px;
 `;
 
-export const VerticalGreen = styled.View`
+export const VerticalGreen = styled.TouchableOpacity`
   width: 24px;
   height: 24px;
   background-color: #b8d54b;
@@ -84,7 +86,7 @@ export const VerticalGreen = styled.View`
   border-radius: 9999px;
 `;
 
-export const VerticalGrey = styled.View`
+export const VerticalGrey = styled.TouchableOpacity`
   width: 24px;
   height: 24px;
   background-color: #8c8c8c;

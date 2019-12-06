@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 import {
   Bars,
   BoxUser,
@@ -19,32 +19,41 @@ import {
   ContainerBars,
 } from './styles';
 
-import { 
+import {
   Button,
   Container,
   Col,
+  CheckBox,
   Header,
   Grid,
-  Title, 
-  Content, 
+  Title,
+  Content,
   Form,
-  Footer, 
-  FooterTab, 
-  Left, 
-  List, 
+  Footer,
+  FooterTab,
+  Left,
+  List,
   ListItem,
-  Right, 
-  Body, 
-  Icon, 
+  Right,
+  Body,
+  Icon,
   Input,
   Item,
-  Text 
+  Text
 } from 'native-base';
 
 
 import {StatusBar} from 'react-native';
 import ProfilePhoto from '~/assets/img/user.png';
 import BarsPhoto from '~/assets/img/bars.png';
+import Alessandra from '~/assets/img/perfis/alessandra.png';
+import Artur from '~/assets/img/perfis/artur.png';
+import Lucas from '~/assets/img/perfis/lucas.png';
+import Enzo from '~/assets/img/perfis/enzo.png';
+import Luiza from '~/assets/img/perfis/luiza.png';
+import Maria from '~/assets/img/perfis/maria.png';
+import Vitoria from '~/assets/img/perfis/vitoria.png';
+import Leonardo from '~/assets/img/perfis/leonardo.png';
 
 export default function Profile({navigation}) {
   const openDrawer = () => {
@@ -75,48 +84,108 @@ export default function Profile({navigation}) {
       <Content>
         <Grid>
           <Col>
-            <Item>
+            <Item style={styles.ContainerInput}>
               <Icon name="ios-search" />
               <Input placeholder="Pesquisar por amigos" />
               <Icon name="ios-people" />
             </Item>
           </Col>
         </Grid>
-        <List>
-            <ListItem>
-              <Left>
-                <User source={ProfilePhoto} />
-              </Left>
-              <Body>
-                <Text>LUCCA</Text>
-              </Body>
-              <Right>
-                
-              </Right>
-            </ListItem>
-            <ListItem>
-              <Left>
-                <User source={ProfilePhoto} />
-              </Left>
-              <Body>
-                <Text>ARTHUR</Text>
-              </Body>
-              <Right>
-                
-              </Right>
-            </ListItem>
-            <ListItem>
-              <Left>
-                <User source={ProfilePhoto} />
-              </Left>
-              <Body>
-                <Text>ENZO</Text>
-              </Body>
-              <Right>
-                
-              </Right>
-            </ListItem>
-          </List>
+        <View style={styles.ContainerGrid}>
+          <View style={styles.gridCheck}>
+            <CheckBox checked={true} color="green"/>
+          </View>
+          <View style={styles.foto}>
+            <Image source={Lucas}/>
+          </View>
+          <View style={styles.texto}>
+            <Text style={styles.name}>LUCCA</Text>
+          </View>
+        </View>
+        <View style={styles.ContainerGrid}>
+          <View style={styles.gridCheck}>
+            <CheckBox checked={false} color="green"/>
+          </View>
+          <View style={styles.foto}>
+            <Image source={Alessandra}/>
+          </View>
+          <View style={styles.texto}>
+            <Text style={styles.name}>ALESSANDRA</Text>
+          </View>
+        </View>
+        <View style={styles.ContainerGrid}>
+          <View style={styles.gridCheck}>
+            <CheckBox checked={false} color="green"/>
+          </View>
+          <View style={styles.foto}>
+            <Image source={Vitoria}/>
+          </View>
+          <View style={styles.texto}>
+            <Text style={styles.name}>VICTÓRIA</Text>
+          </View>
+        </View>
+        <View style={styles.ContainerGrid}>
+          <View style={styles.gridCheck}>
+            <CheckBox checked={false} color="green"/>
+          </View>
+          <View style={styles.foto}>
+            <Image source={Artur}/>
+          </View>
+          <View style={styles.texto}>
+            <Text style={styles.name}>ARTHUR</Text>
+          </View>
+        </View>
+        <View style={styles.ContainerGrid}>
+          <View style={styles.gridCheck}>
+            <CheckBox checked={true} color="green"/>
+          </View>
+          <View style={styles.foto}>
+            <Image source={Maria}/>
+          </View>
+          <View style={styles.texto}>
+            <Text style={styles.name}>MARIA JÚLIA</Text>
+          </View>
+        </View>
+        <View style={styles.ContainerGrid}>
+          <View style={styles.gridCheck}>
+            <CheckBox checked={false} color="green"/>
+          </View>
+          <View style={styles.foto}>
+            <Image source={Luiza}/>
+          </View>
+          <View style={styles.texto}>
+            <Text style={styles.name}>LUIZA</Text>
+          </View>
+        </View>
+        <View style={styles.ContainerGrid}>
+          <View style={styles.gridCheck}>
+            <CheckBox checked={false} color="green"/>
+          </View>
+          <View style={styles.foto}>
+            <Image source={Enzo}/>
+          </View>
+          <View style={styles.texto}>
+            <Text style={styles.name}>ENZO</Text>
+          </View>
+        </View>
+        <View style={styles.ContainerGrid}>
+          <View style={styles.gridCheck}>
+            <CheckBox checked={true} color="green"/>
+          </View>
+          <View style={styles.foto}>
+            <Image source={Leonardo}/>
+          </View>
+          <View style={styles.texto}>
+            <Text style={styles.name}>LEONARDO</Text>
+          </View>
+        </View>
+        <Grid>
+          <Col style={styles.ButtonAlign}>
+            <Button rounded success>
+              <Text>ENVIAR</Text>
+            </Button>
+          </Col>
+        </Grid>
       </Content>
     </Container>
   );
@@ -124,17 +193,40 @@ export default function Profile({navigation}) {
 
 const styles = StyleSheet.create({
   col:{
-    alignItems: 'center', 
+    alignItems: 'center',
   },
   clean:{
     color: '#fff',
   },
   grid:{
-    alignItems: 'center', 
+    alignItems: 'center',
     marginTop: 20,
   },
  icon:{
   height: 30,
   width: 30,
+ },
+ ContainerInput:{
+  alignItems: 'center',
+  marginLeft: 20,
+  width: '90%',
+ },
+ ContainerGrid:{
+  flexDirection: 'row',
+  marginTop: 30,
+  width: '90%',
+ },
+ gridCheck:{
+   alignItems: 'center',
+   marginTop: 13,
+   width: '14%',
+ },
+ name:{
+   marginLeft: 10,
+   marginTop: 10,
+ },
+ ButtonAlign:{
+   alignItems: 'center',
+   marginTop: 10,
  }
 });

@@ -54,8 +54,16 @@ const CustomDrawerContentComponent = ({navigation}) => {
     navigation.navigate('Ajuda');
   };
 
-  const Integracoes = () => {
-    navigation.navigate('Integracoes');
+  const Integrations = () => {
+    navigation.navigate('Integrations');
+  };
+
+  const Resultados = () => {
+    navigation.navigate('Resultados');
+  };
+
+  const EscolhaPerson = () => {
+    navigation.navigate('EscolhaPerson');
   };
 
   return (
@@ -88,10 +96,10 @@ const CustomDrawerContentComponent = ({navigation}) => {
             <Link onPress={Treino}>
               <LinkName>Treino</LinkName>
             </Link>
-            <Link>
+            <Link onPress={Resultados}>
               <LinkName>Resultados</LinkName>
             </Link>
-            <Link>
+            <Link onPress={EscolhaPerson}>
               <LinkName>Escolha seu personal</LinkName>
             </Link>
             <Link onPress={Convidar}>
@@ -100,7 +108,7 @@ const CustomDrawerContentComponent = ({navigation}) => {
             <Link onPress={Ajuda}>
               <LinkName>Ajuda</LinkName>
             </Link>
-            <Link onPress={Integracoes}>
+            <Link onPress={Integrations}>
               <LinkName>Integrações</LinkName>
             </Link>
           </ContainerNav>

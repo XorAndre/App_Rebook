@@ -25,8 +25,11 @@ export const Bars = styled.Image`
 
 export const BoxUser = styled.View`
   width: 100%;
-  height: 170;
+  height: 170px;
   background-color: #c23335;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ContainerPhoto = styled.View`
@@ -132,4 +135,52 @@ export const Title = styled.Text`
   color: white;
   font-size: 20;
   font-weight: 500;
+`;
+
+export const ContainerDay = styled.View`
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+`;
+
+export const BoxDay = styled.View`
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ButtonPlus = styled.TouchableOpacity`
+  width: 25px;
+  height: 25px;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 9999px;
+  position: absolute;
+  top: 15px;
+  right: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ListDay = styled.View`
+
+`;
+
+export const BoxTab = styled.View`
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  flex-direction: row;
+`;
+
+export const Tab = styled.TouchableOpacity`
+  flex: 1;
+  background-color: transparent;
+  margin-right: 5px;
 `;

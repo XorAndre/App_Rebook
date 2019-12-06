@@ -10,7 +10,15 @@ import Grade from '~/pages/Grade';
 import Treino from '~/pages/Treino';
 import Convidar from '~/pages/Convidar';
 import UpdateProfile from '~/pages/UpdateProfile';
-import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
+import Circulo from '~/pages/Circulo';
+import Ajuda from '~/pages/Ajuda';
+import Integrations from '~/pages/Integracoes';
+import AvaliarTreino from '~/pages/Avaliarmeutreino';
+import Natacao from '~/pages/Natacao';
+import ProfileWeek from '~/pages/ProfileWeek';
+import ProfileMount from '~/pages/ProfileMount';
+import Resultados from '~/pages/Resultados';
+import EscolhaPerson from '~/pages/EscolhaPerson';
 
 const AuthStack = createStackNavigator(
   {
@@ -29,7 +37,14 @@ const AppStack = createStackNavigator(
     Treino,
     Convidar,
     UpdateProfile,
+    Ajuda,
+    Integrations,
     Grade,
+    Circulo,
+    AvaliarTreino,
+    Natacao,
+    Resultados,
+    EscolhaPerson,
   },
   {
     initialRouteName: 'Profile',
@@ -37,12 +52,22 @@ const AppStack = createStackNavigator(
   },
 );
 
-const GridStack = createStackNavigator(
+const Week = createStackNavigator(
   {
-    Grade,
+    ProfileWeek,
   },
   {
-    initialRouteName: 'Grade',
+    initialRouteName: 'ProfileWeek',
+    headerMode: 'none',
+  },
+);
+
+const Mount = createStackNavigator(
+  {
+    ProfileMount,
+  },
+  {
+    initialRouteName: 'ProfileMount',
     headerMode: 'none',
   },
 );
@@ -50,6 +75,8 @@ const GridStack = createStackNavigator(
 const Drawer = createDrawerNavigator(
   {
     AppStack,
+    Week,
+    Mount,
   },
   {
     contentOptions: {
