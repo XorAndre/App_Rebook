@@ -18,8 +18,11 @@ import Natacao from '~/pages/Natacao';
 import ProfileWeek from '~/pages/ProfileWeek';
 import ProfileMount from '~/pages/ProfileMount';
 import Resultados from '~/pages/Resultados';
+<<<<<<< HEAD
 import EscolhaPerson from '~/pages/EscolhaPerson';
 
+=======
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
 const AuthStack = createStackNavigator(
   {
     Login,
@@ -44,7 +47,10 @@ const AppStack = createStackNavigator(
     AvaliarTreino,
     Natacao,
     Resultados,
+<<<<<<< HEAD
     EscolhaPerson,
+=======
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
   },
   {
     initialRouteName: 'Profile',

@@ -24,7 +24,11 @@ export const TextButtonClose = styled.Text`
 export const BoxModal = styled.View`
   width: 100%;
   height: 400;
+<<<<<<< HEAD
   background-color: #c23335;
+=======
+  background-color: #C23335;
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
   position: absolute;
   top: 0;
   border-radius: 20;

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {
   Container,
+<<<<<<< HEAD
   Bars,
   BoxUser,
   TitleTrain,
@@ -29,6 +30,22 @@ import {
 } from './styles';
 import {CheckBox} from 'native-base';
 import {StatusBar, StyleSheet} from 'react-native';
+=======
+  Col,
+  Grid,
+  Content,
+  CheckBox,
+  List,
+  ListItem,
+  Right,
+  Body,
+  Text,
+} from 'native-base';
+import {StatusBar} from 'react-native';
+import ImageManha from '~/assets/img/icones/manha.png';
+import ImageTarde from '~/assets/img/icones/tarde.png';
+import ImageNoite from '~/assets/img/icones/noite.png';
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
 import BarsPhoto from '~/assets/img/bars.png';
 import Modal from './components/modal';
 
@@ -47,6 +64,7 @@ export default function Profile({navigation}) {
   const Circulo = () => {
     navigation.navigate('Circulo');
   };
+<<<<<<< HEAD
 
   const openModal = () => {
     setModal(true);
@@ -55,6 +73,8 @@ export default function Profile({navigation}) {
     setModal(false);
   };
 
+=======
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
   return (
     <Container>
       <StatusBar hidden={true} />
@@ -62,6 +82,7 @@ export default function Profile({navigation}) {
         <Bars source={BarsPhoto} />
       </ContainerBars>
       <BoxUser>
+<<<<<<< HEAD
         <TitleTrain>TREINO</TitleTrain>
       </BoxUser>
       <ContainerMont onPress={openModal}>
@@ -300,13 +321,140 @@ export default function Profile({navigation}) {
         </BoxListTrain>
       </ContainerTrainList>
       <Modal visible={modal} onRequestClose={closeModal} />
+=======
+        <Grid style={styles.grid}>
+          <Col style={styles.col}></Col>
+        </Grid>
+      </BoxUser>
+      <Content>
+        <Grid style={styles.gridListTopo}>
+          <Col></Col>
+          <Col><Text tyle={styles.textGrid}>AULA</Text></Col>
+          <Col><Text tyle={styles.textGrid}>KGAL</Text></Col>
+          <Col></Col>
+        </Grid>
+        <Grid style={styles.gridList}>
+          <Col style={styles.columnCheck}>
+            <CheckBox checked={true} color="green"/>
+            <Text>12 Quar</Text>
+          </Col>
+          <Col>
+            <Text>Vila Olimpia</Text>
+            <Text>MUSCULAÇÃO</Text>
+            <Text>Evandro</Text>
+          </Col>
+          <Col style={styles.columnMeio}><Text>450CKAL</Text></Col>
+          <Col>
+            <Button small rounded>
+              <Text>REALIZADO</Text>
+            </Button>
+            <Text onPress={AvaliarTreino}>Avaliar</Text>
+          </Col>
+        </Grid>
+        <Grid style={styles.gridList}>
+          <Col style={styles.columnCheck}>
+            <CheckBox checked={true} color="green"/>
+            <Text>12 Quar</Text>
+          </Col>
+          <Col>
+            <Text>Vila Olimpia</Text>
+            <Text>ESTEIRA</Text>
+          </Col>
+          <Col style={styles.columnMeio}><Text>350CKAL</Text></Col>
+          <Col>
+            <Button small rounded>
+              <Text>REALIZADO</Text>
+            </Button>
+          </Col>
+        </Grid>
+        <Grid style={styles.gridList}>
+          <Col style={styles.columnCheck}>
+            <CheckBox checked={false} color="green"/>
+            <Text>12 Quar</Text>
+          </Col>
+          <Col>
+            <Text>CIDADE JARDIM</Text>
+            <Text>NATAÇÃO</Text>
+            <Text>WANDERLEI</Text>
+          </Col>
+          <Col style={styles.columnMeio}><Text>450CKAL</Text></Col>
+          <Col>
+            <Button small rounded success onPress={Natacao}>
+              <Text>RESERVAR</Text>
+            </Button>
+          </Col>
+        </Grid>
+        <Grid style={styles.gridList}>
+          <Col style={styles.columnCheck}>
+            <CheckBox checked={false} color="green"/>
+            <Text>12 Quar</Text>
+          </Col>
+          <Col>
+            <Text>CIDADE JARDIM</Text>
+            <Text>CYCLE</Text>
+            <Text>Anselmo</Text>
+          </Col>
+          <Col style={styles.columnMeio}><Text>450CKAL</Text></Col>
+          <Col>
+            <Button small rounded success onPress={Circulo}>
+              <Text>RESERVAR</Text>
+            </Button>
+          </Col>
+        </Grid>
+        <Grid>
+          
+        </Grid>
+      </Content>
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
     </Container>
   );
 }
-
 const styles = StyleSheet.create({
+<<<<<<< HEAD
   check: {
     position: 'relative',
     marginRight: 20,
+=======
+  gridListTopo:{
+    marginTop: 40,
+  },
+  gridList:{
+    borderBottomColor: '#95989A',
+    borderLeftColor: '#fff',
+    borderTopColor: '#fff',
+    borderRightColor: '#fff',
+    borderStyle: 'solid',
+    borderWidth: 0.28,
+    marginTop: 10,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 10,
+    paddingBottom: 10,
+  },
+  col: {
+    alignItems: 'center',
+  },
+  columnCheck:{
+    width: '18%',
+  },
+  columnMeio:{
+    alignItems: 'center',
+    flex: 1,
+  },
+  clean: {
+    color: '#fff',
+  },
+  grid: {
+    alignItems: 'center',
+    marginTop: 20,
+  },
+  icon: {
+    height: 30,
+    width: 30,
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
+  },
+  textGrid:{
+    fontSize: 20,
+    fontWeight: 'bold',
   },
 });

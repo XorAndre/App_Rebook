@@ -81,7 +81,11 @@ export const VerticalGreen = styled.TouchableOpacity`
   height: 24px;
   border-width: 5px;
   border-color: #b8d54b;
+<<<<<<< HEAD
   background-color: #81a300;
+=======
+  background-color: #81A300;
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
   margin-top: 10px;
   border-radius: 9999px;
 `;

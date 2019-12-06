@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {StyleSheet} from 'react-native';
+<<<<<<< HEAD
 import {
   Bars,
   BoxUser,
@@ -13,6 +14,9 @@ import {
   BoxTab,
   Tab,
 } from './styles';
+=======
+import {Bars, BoxUser, User, ContainerBars, ContainerTitle, Title, ContainerDay, BoxDay, ButtonPlus, BoxTab, Tab} from './styles';
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
 import {
   Container,
   Left,

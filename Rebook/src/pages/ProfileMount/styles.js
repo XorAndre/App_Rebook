@@ -89,7 +89,11 @@ export const VerticalGrey = styled.TouchableOpacity`
   height: 24px;
   border-width: 5px;
   border-color: #8c8c8c;
+<<<<<<< HEAD
   background-color: #6c6c6c;
+=======
+  background-color: #6C6C6C;
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
   margin-top: 10px;
   border-radius: 9999px;
 `;

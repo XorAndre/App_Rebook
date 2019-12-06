@@ -53,6 +53,7 @@ const CustomDrawerContentComponent = ({navigation}) => {
   const Ajuda = () => {
     navigation.navigate('Ajuda');
   };
+<<<<<<< HEAD
 
   const Integrations = () => {
     navigation.navigate('Integrations');
@@ -64,6 +65,14 @@ const CustomDrawerContentComponent = ({navigation}) => {
 
   const EscolhaPerson = () => {
     navigation.navigate('EscolhaPerson');
+=======
+  
+  const Integrations = async () => {
+    navigation.navigate('Integrations');
+  };  
+  const Resultados = async () => {
+    navigation.navigate('Resultados');
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
   };
 
   return (
@@ -96,8 +105,13 @@ const CustomDrawerContentComponent = ({navigation}) => {
             <Link onPress={Treino}>
               <LinkName>Treino</LinkName>
             </Link>
+<<<<<<< HEAD
             <Link onPress={Resultados}>
               <LinkName>Resultados</LinkName>
+=======
+            <Link>
+              <LinkName onPress={Resultados}>Resultados</LinkName>
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
             </Link>
             <Link onPress={EscolhaPerson}>
               <LinkName>Escolha seu personal</LinkName>

@@ -71,9 +71,15 @@ export const TextVertical = styled.Text`
 export const VerticalRed = styled.TouchableOpacity`
   width: 24px;
   height: 24px;
+<<<<<<< HEAD
   background-color: #c10037;
   border-width: 5px;
   border-color: #f24979;
+=======
+  background-color: #C10037;
+  border-width: 5px;
+  border-color: #f24979 ;
+>>>>>>> 8f701d6c03b4d8b7efd906b21e01790cfe521e0f
   margin-top: 10px;
   border-radius: 9999px;
 `;
